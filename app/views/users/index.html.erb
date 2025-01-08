@@ -1,0 +1,6 @@
+<% @users.each do |user| %>
+  <%= user.name %>
+  <% user.created_events.each do |event| %>
+    <%= event.name %>
+  <% end %>
+<% end %>
